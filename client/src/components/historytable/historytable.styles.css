@@ -1,0 +1,19 @@
+table {
+    background-color: rgba(33, 33, 33, 0.524);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+
+td {
+    padding: .5rem 1rem;
+    overflow: hidden;
+    width: 10rem;
+}
+
+.history-preview-img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 5px;
+}
