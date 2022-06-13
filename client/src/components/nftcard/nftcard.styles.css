@@ -1,0 +1,22 @@
+.nft-card {
+  height: 18rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(2px);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 2rem;
+  width: 15rem;
+  border-radius: 10px;
+}
+
+.nft-card h1 {
+  font-weight: 400;
+}
+
+.nft-card-monster {
+    position: relative;
+    margin-top: -10rem;
+}
