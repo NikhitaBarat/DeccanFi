@@ -28,26 +28,29 @@ const Header = () => {
           <Link to="/feed">Feed</Link>
         </li>
         <li>
-          <Link to="/profile">Profile</Link>
-        </li>
-        <li>
           <Link to="/stat">Stat</Link>
         </li>
+        {isAuthenticated && (
+          <li>
+            <Link to="/profile">Profile</Link>
+          </li>
+        )}
         {!isAuthenticated && (
           <div className="auth-option">
-            <li onClick={() => loginWithRedirect()}>
-              Login
-            </li>
+            <li onClick={() => loginWithRedirect()}>Login</li>
             <li>
-              <button onClick={() => loginWithRedirect()} className="sign-up-btn">Sign Up</button>
+              <button
+                onClick={() => loginWithRedirect()}
+                className="sign-up-btn"
+              >
+                Sign Up
+              </button>
             </li>
           </div>
         )}
         {isAuthenticated && (
           <div className="auth-option">
-            <li onClick={() => logoutWithRedirect()}>
-              Logout
-            </li>
+            <li onClick={() => logoutWithRedirect()}>Logout</li>
             <li>
               <img className="user-pro-img" src={user.picture} alt="" />
             </li>
