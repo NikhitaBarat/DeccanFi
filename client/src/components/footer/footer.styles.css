@@ -1,0 +1,26 @@
+.footer {
+    margin-top: 5rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #4f4c4c51 100%); */
+    backdrop-filter: blur(2px);
+}
+
+.footer-content {
+    padding: 0 5rem;
+}
+
+.contributors {
+    display: flex;
+    flex-direction: column;
+}
+
+.contributors a {
+    margin-top: .5rem;
+    color: white;
+}
+
+.footer-logo {
+    height: 5rem;
+}

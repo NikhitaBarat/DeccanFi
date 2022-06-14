@@ -118,6 +118,7 @@ section .spreads:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .website-main p {
@@ -141,10 +142,21 @@ section .spreads:nth-child(2) {
       rgba(0, 0, 0, 0) 99.7%
     ),
     #d04848;
-  box-shadow: 0px 4px 37px 4px rgba(155, 155, 155, 0.15);
+  transition: all .5s;
+  cursor: pointer;
   
 }
 
+.collect-now:hover {
+  transform: scale(1.06);
+  box-shadow: 0px 4px 37px 4px rgba(155, 155, 155, 0.15);
+
+}
+
+.collect-now:active {
+  transform: scale(0.9);
+  box-shadow: 0px 4px 37px 4px rgba(155, 155, 155, 0.05);
+}
 .oval-1 {
   position: fixed;
   height: 50rem;
@@ -220,4 +232,5 @@ section .spreads:nth-child(2) {
   margin-top: 10rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }

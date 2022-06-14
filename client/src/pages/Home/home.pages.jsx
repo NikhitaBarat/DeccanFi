@@ -45,7 +45,7 @@ const Home = () => {
           <h1>
             Discover, and collect <br />
             extraordinary <br />
-            <span>monster</span> NFTs.
+            <span>NFTs</span> by your friends.
           </h1>
           <p>
             Marketplace for monster character collections non fungible token
