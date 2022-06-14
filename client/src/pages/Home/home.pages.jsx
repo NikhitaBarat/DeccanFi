@@ -1,23 +1,29 @@
 import React from "react";
-import { MonsterLeft, MonsterRight, BoredApes, Babymonster } from "../../assets";
+import {
+  MonsterLeft,
+  MonsterRight,
+  BoredApes,
+  Babymonster,
+} from "../../assets";
 import { NFTcard } from "../../components";
+import { Sponsors } from "../../components";
 import "./home.styles.css";
 
 const Home = () => {
   const TREND_NFT = [
     {
-      "title": "Yeti Crypt",
-      "imgurl": MonsterRight
+      title: "Yeti Crypt",
+      imgurl: MonsterRight,
     },
     {
-      "title": "Bored Apes",
-      "imgurl": BoredApes
+      title: "Bored Apes",
+      imgurl: BoredApes,
     },
     {
-      "title": "Baby Monsta",
-      "imgurl": Babymonster
+      title: "Baby Monsta",
+      imgurl: Babymonster,
     },
-  ]
+  ];
 
   return (
     <div className="home-page">
@@ -56,14 +62,14 @@ const Home = () => {
         </div>
       </div>
       <div className="rounds">
-            <div className="cirlcle-1"></div>
-            <div className="cirlcle-2"></div>
-            <div className="cirlcle-3"></div>
+        <div className="cirlcle-1"></div>
+        <div className="cirlcle-2"></div>
+        <div className="cirlcle-3"></div>
       </div>
-
+      <Sponsors />
       <div className="nft-list">
         {TREND_NFT.map((monster) => (
-          <NFTcard title={monster.title}  image={monster.imgurl}/>
+          <NFTcard title={monster.title} image={monster.imgurl} />
         ))}
       </div>
     </div>

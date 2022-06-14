@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.list li {
+    margin-left: 4rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.list img {
+    height: 4rem;
+}
+
+.list img:hover {
+    transform: scale(1.06);
+    transition: 0.4s;
+}
