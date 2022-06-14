@@ -5,28 +5,28 @@ import "./profileCard.styles.css";
 function ProfileCard() {
   const { user } = useAuth0();
   return (
-    <div className="card">
+    <div className="profile-card">
       <div className="profile-banner">
         <div className="profile-bg"></div>
         <div className="profile-overlay"></div>
       </div>
       <div className="circle">
         <div className="profile-content">
-          <img src={user.picture} alt="" />
+          <img className="profile-picture" src={user.picture} alt="" />
           <div className="userdata">
             <h3>{user.name}</h3>
           </div>
 
-          <div className="box">
-            <div>
+          <div className="profile-data-box">
+            <div className="profile-stats">
               <p className="num">100</p>
               <p>Posts</p>
             </div>
-            <div>
+            <div className="profile-stats">
               <p className="num">1.5K</p>
               <p>Followers</p>
             </div>
-            <div>
+            <div className="profile-stats">
               <p className="num">500</p>
               <p>Following</p>
             </div>
