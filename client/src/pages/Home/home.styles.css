@@ -4,19 +4,85 @@
   color: rgb(233, 233, 233);
 }
 
-.blur-bg {
+.home-bg-purple {
   position: fixed;
+  background-color: rgb(16, 6, 27);
+  height: 100vh;
+  width: 100%;
+  z-index: -3;
   top: 0;
-  z-index: -2;
-  background: linear-gradient(
-    179.71deg,
-    rgba(245, 238, 238, 0.11) 0.26%,
-    rgba(245, 238, 238, 0) 55.91%
-  );
-  height: 40vh;
-  width: 100vw;
-  filter: blur(8px);
 }
+
+.bg-relative {
+  position: relative;
+}
+
+.blur-bg-1 {
+  position: absolute;
+  top: 0;
+  margin-top: -10rem;
+  z-index: -1;
+  background: linear-gradient(180.63deg, rgba(128, 166, 255, 0.3) 9.04%, rgba(255, 255, 255, 0) 82.49%);
+  backdrop-filter: blur(26px);
+  height: 100vh;
+  width: 50%;
+}
+
+.blur-bg-2 {
+  position: absolute;
+  right: 0;
+  margin-top: -10rem;
+  z-index: -1;
+  background: linear-gradient(180.63deg, rgba(110, 168, 250, 0.267) 9.04%, rgba(255, 255, 255, 0) 82.49%);
+  backdrop-filter: blur(26px);
+  height: 100vh;
+  width: 50%;
+}
+
+
+.cir-1 {
+  position: absolute;
+  z-index: -2;
+  right: 20rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  background-color: rgb(211, 176, 22);
+  filter: blur(80px);
+
+}
+
+.cir-2 {
+  position: absolute;
+  z-index: -2;
+  right: 40rem;
+  top: 20rem;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  background-color: rgb(100, 54, 8);
+  filter: blur(20px);
+}
+
+
+.cir-3 {
+  position: absolute;
+  z-index: -2;
+  right: 1rem;
+  top: -20rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20rem;
+  background-color: rgb(101, 189, 91);
+  filter: blur(150px);
+}
+
+
+
+
+
+
+
 
 section .spreads {
   position: fixed;
@@ -25,17 +91,17 @@ section .spreads {
 }
 
 section .spreads:nth-child(1) {
-  background-color: #36ea93;
+  background-color: #04d690;
   height: 300px;
   width: 300px;
-  margin-left: 80rem;
+  margin-left: 100rem;
   margin-top: -10rem;
 }
 
 section .spreads:nth-child(2) {
-  background-color: #dd0e0e;
-  height: 400px;
-  width: 400px;
+  background-color: #ff5d13;
+  height: 500px;
+  width: 800px;
   margin-left: -10rem;
   margin-top: -10rem;
 }
