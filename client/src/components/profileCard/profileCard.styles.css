@@ -1,0 +1,64 @@
+.card {
+    padding: 10rem;
+}
+
+.profile-bg {
+    position: relative;
+    z-index: -2;
+    margin-top: -5rem;
+    height: 30rem;
+    background: url("https://i.pinimg.com/originals/b2/b1/18/b2b118f62e260bc97e97c1ad96ca6862.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-overlay {
+    position: relative;
+    z-index: -1;
+    height: 40rem;
+    margin-top: -40rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.76%, #0d0d0d71 50.24%);
+}
+
+.circle img {
+    border: 3px solid black;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 200px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -5rem;
+}
+
+.profile-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.userdata {
+    text-align: right;
+    line-height: 20px;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.box {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    border-top: 1rem;
+    border-radius: 1rem;
+    padding: 5rem;
+}
+
+.box p {
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
