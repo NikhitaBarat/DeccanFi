@@ -118,6 +118,7 @@ section .spreads:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .website-main p {
@@ -220,4 +221,5 @@ section .spreads:nth-child(2) {
   margin-top: 10rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
