@@ -1,15 +1,36 @@
 import React from "react";
-import { MonsterLeft } from "../../assets";
+import { MonsterLeft, MonsterRight, BoredApes, Babymonster } from "../../assets";
 import { NFTcard } from "../../components";
 import "./home.styles.css";
 
 const Home = () => {
+  const TREND_NFT = [
+    {
+      "title": "Yeti Crypt",
+      "imgurl": MonsterRight
+    },
+    {
+      "title": "Bored Apes",
+      "imgurl": BoredApes
+    },
+    {
+      "title": "Baby Monsta",
+      "imgurl": Babymonster
+    },
+  ]
+
   return (
     <div className="home-page">
+      <div className="home-bg-purple"></div>
       <div className="bg-relative">
-        <div className="blur-bg"></div>
+        <div className="cir-1"></div>
+        <div className="cir-2"></div>
+        <div className="cir-3"></div>
+        <div className="cir-4"></div>
+        <div className="blur-bg-1"></div>
+        <div className="blur-bg-2"></div>
       </div>
-      <section>
+      <section className="spread-section">
         <div className="spreads"></div>
         <div className="spreads"></div>
       </section>
@@ -41,9 +62,9 @@ const Home = () => {
       </div>
 
       <div className="nft-list">
-        <NFTcard />
-        <NFTcard />
-        <NFTcard />
+        {TREND_NFT.map((monster) => (
+          <NFTcard title={monster.title}  image={monster.imgurl}/>
+        ))}
       </div>
     </div>
   );

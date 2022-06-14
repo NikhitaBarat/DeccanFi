@@ -19,4 +19,10 @@
 .nft-card-monster {
     position: relative;
     margin-top: -10rem;
+    transition: all .2s;
+}
+
+
+.nft-card-monster:hover {
+  transform: scale(1.08);
 }
