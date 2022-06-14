@@ -1,13 +1,13 @@
 .card {
-    padding: 10rem;
+    /* padding: 10rem; */
 }
 
 .profile-bg {
     position: relative;
     z-index: -2;
-    margin-top: -5rem;
+    margin-top: -8rem;
     height: 30rem;
-    background: url("https://i.pinimg.com/originals/b2/b1/18/b2b118f62e260bc97e97c1ad96ca6862.jpg");
+    background: url("https://images.hdqwalls.com/wallpapers/blue-agate-4k-l8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

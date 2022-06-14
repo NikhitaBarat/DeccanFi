@@ -6,8 +6,10 @@ function ProfileCard() {
   const { user } = useAuth0();
   return (
     <div className="card">
-      <div className="profile-bg"></div>
-      <div className="profile-overlay"></div>
+      <div className="profile-banner">
+        <div className="profile-bg"></div>
+        <div className="profile-overlay"></div>
+      </div>
       <div className="circle">
         <div className="profile-content">
           <img src={user.picture} alt="" />
