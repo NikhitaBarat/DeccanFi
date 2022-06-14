@@ -1,12 +1,12 @@
 import React from 'react';
 import './nftcard.styles.css';
-import { MonsterRight } from '../../assets';
+// import { MonsterRight } from '../../assets';
 
-const Nftcard = () => {
+const Nftcard = ({title, image}) => {
   return (
     <div className='nft-card'>
-        <img className='nft-card-monster' src={MonsterRight} alt="" />
-        <h1>Yeti Crypt</h1>
+        <img className='nft-card-monster' src={image} alt="" />
+        <h1>{title}</h1>
     </div>
   )
 }
