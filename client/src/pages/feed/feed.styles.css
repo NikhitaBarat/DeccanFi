@@ -100,13 +100,38 @@
     height: 2.4rem;
     color: #2D3138;
     margin-top: .7rem;
+    outline: none;
 }
 .options{
     display: flex;
     justify-content: space-between;
     margin-left: 2rem;
     text-align: center;
-    
 }
 .option{
+    display: flex;
+    gap: .5rem;
+    margin: .5rem;
+    padding: 0.3rem 1rem;
+    background: #222428;
+    border-radius: 10px;
+}
+.right{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #2D3138;
+    padding: .5rem;
+    border-radius: 10px;
+}
+.a-box{
+    margin-top: 1rem;
+    display: flex;
+    background-color: #222428;
+    padding: .5rem;
+    border-radius: 10px;
+}
+.a-top img{
+    height: 3rem;
+    border: 3px solid black;
+    border-radius: 50%;
 }

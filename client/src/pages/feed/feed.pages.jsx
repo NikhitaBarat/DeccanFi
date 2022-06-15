@@ -6,6 +6,7 @@ import Profile from '../../assets/feed-profile.png';
 import SBanner from '../../assets/story-banner.png';
 import SProfile from '../../assets/story-image.png';
 import PProfile from '../../assets/post-image.png';
+import AImage from '../../assets/aimage.png'
 import PhotoSizeSelectActualIcon from '@mui/icons-material/PhotoSizeSelectActual';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PollIcon from '@mui/icons-material/Poll';
@@ -104,7 +105,75 @@ const Feed = () => {
           </div>
         </div>
       </div>
-      <div className="right"></div>
+      <div className="right">
+        <div className="activity">
+          Recent Activity
+          <div className="a-box">
+            <div className="a-top">
+              <img src={AImage} alt="" />
+              <h4>Vitaliy Akterskiy</h4>
+              <p>Recently purchased Primate Solana</p>
+            </div>
+            <div className="a-bid">
+              <div className="amount">
+                <h4>34 ETH</h4>
+                <p>Last Bid</p>
+              </div>
+              <div className="offer">
+                Make Offer
+              </div>
+            </div>
+          </div>
+          <div className="a-box">
+            <div className="a-top">
+              <img src={AImage} alt="" />
+              <h4>Vitaliy Akterskiy</h4>
+              <p>Recently purchased Primate Solana</p>
+            </div>
+            <div className="a-bid">
+              <div className="amount">
+                <h4>34 ETH</h4>
+                <p>Last Bid</p>
+              </div>
+              <div className="offer">
+                Make Offer
+              </div>
+            </div>
+          </div>
+          <div className="a-box">
+            <div className="a-top">
+              <img src={AImage} alt="" />
+              <h4>Vitaliy Akterskiy</h4>
+              <p>Recently purchased Primate Solana</p>
+            </div>
+            <div className="a-bid">
+              <div className="amount">
+                <h4>34 ETH</h4>
+                <p>Last Bid</p>
+              </div>
+              <div className="offer">
+                Make Offer
+              </div>
+            </div>
+          </div>
+          <div className="a-box">
+            <div className="a-top">
+              <img src={AImage} alt="" />
+              <h4>Vitaliy Akterskiy</h4>
+              <p>Recently purchased Primate Solana</p>
+            </div>
+            <div className="a-bid">
+              <div className="amount">
+                <h4>34 ETH</h4>
+                <p>Last Bid</p>
+              </div>
+              <div className="offer">
+                Make Offer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
