@@ -5,3 +5,5 @@ export { default as Sidebar } from "./sidebar/sidebar.components";
 export { default as Overview } from "./overview/overview.components";
 export { default as AuctionNft } from "./auctionNft/auctionNft.components";
 export { default as Sponsors } from "./sponsers/sponsers.components";
+export { default as Story } from './story/story.components';
+export { default as FeedProfileCard } from './feedProfileCard/feedProfileCard.components'; 
