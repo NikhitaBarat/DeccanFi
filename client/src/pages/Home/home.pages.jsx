@@ -6,7 +6,7 @@ import {
   Babymonster,
 } from "../../assets";
 import { NFTcard } from "../../components";
-import { Sponsors } from "../../components";
+// import { Sponsors } from "../../components";
 import "./home.styles.css";
 
 const Home = () => {
@@ -65,7 +65,7 @@ const Home = () => {
         <div className="cirlcle-2"></div>
         <div className="cirlcle-3"></div>
       </div>
-      <Sponsors />
+      {/* <Sponsors /> */}
       <div className="nft-list">
         {TREND_NFT.map((monster) => (
           <NFTcard title={monster.title} image={monster.imgurl} />
