@@ -41,6 +41,9 @@
     border-radius: 4px;
     color: rgb(224, 216, 242);
 }
+.centre{
+    margin-left: -4rem;
+}
 .stories{
     display: flex;
     justify-content: space-between;
