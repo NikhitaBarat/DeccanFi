@@ -1,19 +1,30 @@
 import React from "react";
 import './feed.styles.css';
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
-import Banner from '../../assets/feed-banner.png';
-import Profile from '../../assets/feed-profile.png';
-import SBanner from '../../assets/story-banner.png';
-import SProfile from '../../assets/story-image.png';
-import PProfile from '../../assets/post-image.png';
-import AImage from '../../assets/aimage.png'
+import { Banner, Profile, Profile1, Profile2, Profile3, PProfile, AImage, Abstract1, Abstract2, Abstract3 } from '../../assets';
 import PhotoSizeSelectActualIcon from '@mui/icons-material/PhotoSizeSelectActual';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PollIcon from '@mui/icons-material/Poll';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import { ClickAwayListener } from "@mui/material";
+import Storycard from '../../components/storycard/storycard.components.jsx'
 
 const Feed = () => {
+  const STORY = [
+    {
+      title: "Adison Mango",
+      imgurl: Abstract1,
+      profileimg: Profile1,
+    },
+    {
+      title: "Rosalin Kumberai",
+      imgurl: Abstract2,
+      profileimg: Profile2,
+    },
+    {
+      title: "Reene Rapp",
+      imgurl: Abstract3,
+      profileimg: Profile3,
+    },
+  ];
   return (
     <div className="feed-page">
       <div className="left">
@@ -46,39 +57,9 @@ const Feed = () => {
       </div>
       <div className="centre">
         <div className="stories">
-          <div className="story">
-            <div className="story-banner">
-              <img src={SBanner} alt="" />
-            </div>
-            <div className="story-image">
-              <img src={SProfile} alt="" />
-            </div>
-            <div className="story-name">
-              <h4>Adison Mango</h4>
-            </div>
-          </div>
-          <div className="story">
-            <div className="story-banner">
-              <img src={SBanner} alt="" />
-            </div>
-            <div className="story-image">
-              <img src={SProfile} alt="" />
-            </div>
-            <div className="story-name">
-              <h4>Adison Mango</h4>
-            </div>
-          </div>
-          <div className="story">
-            <div className="story-banner">
-              <img src={SBanner} alt="" />
-            </div>
-            <div className="story-image">
-              <img src={SProfile} alt="" />
-            </div>
-            <div className="story-name">
-              <h4>Adison Mango</h4>
-            </div>
-          </div>
+          {STORY.map((s) => (
+            <Storycard title={s.title} image={s.imgurl} profile={s.profileimg} />
+          ))}
         </div>
         <div className="post">
           <div className="top">
@@ -119,9 +100,9 @@ const Feed = () => {
                 <h4>34 ETH</h4>
                 <p>Last Bid</p>
               </div>
-              <div className="offer">
-                Make Offer
-              </div>
+              <button className='offer' >
+                Make offer
+              </button>
             </div>
           </div>
           <div className="a-box">
@@ -135,9 +116,9 @@ const Feed = () => {
                 <h4>34 ETH</h4>
                 <p>Last Bid</p>
               </div>
-              <div className="offer">
-                Make Offer
-              </div>
+              <button className='offer' >
+                Make offer
+              </button>
             </div>
           </div>
           <div className="a-box">
@@ -151,9 +132,9 @@ const Feed = () => {
                 <h4>34 ETH</h4>
                 <p>Last Bid</p>
               </div>
-              <div className="offer">
+              <button className='offer' >
                 Make Offer
-              </div>
+              </button>
             </div>
           </div>
           <div className="a-box">
@@ -167,9 +148,9 @@ const Feed = () => {
                 <h4>34 ETH</h4>
                 <p>Last Bid</p>
               </div>
-              <div className="offer">
+              <button className='offer'>
                 Make Offer
-              </div>
+              </button>
             </div>
           </div>
         </div>

@@ -48,29 +48,6 @@
     display: flex;
     justify-content: space-between;
 }
-.story{
-    height: 14rem;
-    background: rgba(80, 95, 108, 0.34);
-    border-radius: 15px;
-    margin-right: 2rem;
-}
-.story:hover{
-    box-shadow: 0px 4px 110px 7px rgba(78, 77, 77, 0.711);
-}
-.story-banner img{
-    border-radius: 5px;
-    height: 10rem;
-    width: 10rem;
-}
-.story-image img{
-    margin-top: -3rem;
-    height: 4.5rem;
-    margin-left: 2.5rem;
-}
-.story-name{
-    text-align: center;
-    margin-left: -0.5rem;
-}
 .post{
     z-index: -2;
     background-color: #2D3138;
