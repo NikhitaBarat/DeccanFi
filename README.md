@@ -8,7 +8,3 @@
 - [Barat Nikhita](https://github.com/nikhitaBarat/)
 - [Siddhant Prateek](https://github.com/siddhantprateek)
 - [Suvangi Paul](https://github.com/suvangipaul)
-
-
-
-
