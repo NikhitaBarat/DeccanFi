@@ -6,7 +6,6 @@ import {
   Babymonster,
 } from "../../assets";
 import { NFTcard } from "../../components";
-// import { Sponsors } from "../../components";
 import "./home.styles.css";
 
 const Home = () => {
