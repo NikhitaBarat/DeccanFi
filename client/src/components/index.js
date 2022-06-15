@@ -7,4 +7,5 @@ export { default as AuctionNft } from "./auctionNft/auctionNft.components";
 export { default as Sponsors } from "./sponsers/sponsers.components";
 export { default as Story } from './story/story.components';
 export { default as Storycard } from './storycard/storycard.components';
+export { default as Recentcard } from './recentcard/recentcard.components';
 export { default as FeedProfileCard } from './feedProfileCard/feedProfileCard.components'; 
