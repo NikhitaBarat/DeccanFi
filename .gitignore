@@ -13,3 +13,4 @@ artifacts
 # production
 build
 auth_config.json
+.vscode
