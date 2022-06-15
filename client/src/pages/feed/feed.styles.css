@@ -1,1 +1,112 @@
-
+.feed-page{
+    display: flex;
+}
+.left{
+    width: 30rem;
+    margin-left: 2rem;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+}
+.show{
+    display: flex;
+    padding-left: 0.7rem;
+}
+.profile-card{
+    width: 15rem;
+    height: 20rem;
+    z-index: -2;
+    background: rgba(80, 95, 108, 0.34);
+    border-radius: 15px;
+}
+.profile-banner img{
+    width: 15rem;
+    height: 7rem;
+    border-radius: 5px;
+}
+.profile-image img{
+    width: 6rem;
+    margin-top: -3rem;
+}
+.name{
+    padding-top: 1rem;
+}
+.check-profile{
+    background: rgba(62, 67, 75, 0.81);
+    margin-top: 1.7rem;
+    cursor: pointer;
+    border: none;
+    width: 10rem;
+    height: 1.7rem;
+    border-radius: 4px;
+    color: rgb(224, 216, 242);
+}
+.centre{
+    margin-left: -12rem;
+}
+.stories{
+    display: flex;
+    justify-content: space-between;
+}
+.story{
+    width: 10rem;
+    height: 14rem;
+    z-index: -2;
+    background: rgba(80, 95, 108, 0.34);
+    border-radius: 15px;
+    margin-right: 2rem;
+}
+.story :hover{
+    background: rgba(139, 139, 139, 0.34);
+    box-shadow: 0px 4px 110px 7px rgba(205, 205, 205, 0.25);
+}
+.story-banner img{
+    border-radius: 5px;
+    height: 10rem;
+    width: 10rem;
+}
+.story-image img{
+    margin-top: -3rem;
+    height: 4.5rem;
+    margin-left: 2.5rem;
+}
+.story-name{
+    text-align: center;
+    margin-left: -0.5rem;
+}
+.post{
+    z-index: -2;
+    background-color: #2D3138;
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+.top{
+    display: flex;
+}
+.top img{
+    height: 3rem;
+    border: 3px solid #464C56;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+.top input{
+    width: 30rem;
+    margin: .5rem;
+    background-color: #222428;
+    padding: 1rem;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    height: 2.4rem;
+    color: #2D3138;
+    margin-top: .7rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    text-align: center;
+    
+}
+.option{
+}
