@@ -42,14 +42,13 @@
     color: rgb(224, 216, 242);
 }
 .centre{
-    margin-left: -12rem;
+    margin-left: -5rem;
 }
 .stories{
     display: flex;
     justify-content: space-between;
 }
 .story{
-    width: 10rem;
     height: 14rem;
     z-index: -2;
     background: rgba(80, 95, 108, 0.34);
