@@ -41,9 +41,6 @@
     border-radius: 4px;
     color: rgb(224, 216, 242);
 }
-.centre{
-    margin-left: -5rem;
-}
 .stories{
     display: flex;
     justify-content: space-between;
@@ -96,16 +93,4 @@
     background-color: #2D3138;
     padding: .5rem;
     border-radius: 10px;
-}
-.a-box{
-    margin-top: 1rem;
-    display: flex;
-    background-color: #222428;
-    padding: .5rem;
-    border-radius: 10px;
-}
-.a-top img{
-    height: 3rem;
-    border: 3px solid black;
-    border-radius: 50%;
 }

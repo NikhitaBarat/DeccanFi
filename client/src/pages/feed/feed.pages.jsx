@@ -6,6 +6,7 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 import PollIcon from '@mui/icons-material/Poll';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import Storycard from '../../components/storycard/storycard.components.jsx'
+import Recentcard from '../../components/recentcard/recentcard.components.jsx'
 
 const Feed = () => {
   const STORY = [
@@ -23,6 +24,38 @@ const Feed = () => {
       title: "Reene Rapp",
       imgurl: Abstract3,
       profileimg: Profile3,
+    },
+  ];
+  const BID = [
+    {
+      image: AImage,
+      name: "Vitaliy Akterskiy",
+      recent: "Recently Purchased Primate Solana",
+      eth: "34 ETH"
+    },
+    {
+      image: AImage,
+      name: "Vitaliy Akterskiy",
+      recent: "Recently Purchased Primate Solana",
+      eth: "34 ETH"
+    },
+    {
+      image: AImage,
+      name: "Vitaliy Akterskiy",
+      recent: "Recently Purchased Primate Solana",
+      eth: "34 ETH"
+    },
+    {
+      image: AImage,
+      name: "Vitaliy Akterskiy",
+      recent: "Recently Purchased Primate Solana",
+      eth: "34 ETH"
+    },
+    {
+      image: AImage,
+      name: "Vitaliy Akterskiy",
+      recent: "Recently Purchased Primate Solana",
+      eth: "34 ETH"
     },
   ];
   return (
@@ -88,71 +121,10 @@ const Feed = () => {
       </div>
       <div className="right">
         <div className="activity">
-          Recent Activity
-          <div className="a-box">
-            <div className="a-top">
-              <img src={AImage} alt="" />
-              <h4>Vitaliy Akterskiy</h4>
-              <p>Recently purchased Primate Solana</p>
-            </div>
-            <div className="a-bid">
-              <div className="amount">
-                <h4>34 ETH</h4>
-                <p>Last Bid</p>
-              </div>
-              <button className='offer' >
-                Make offer
-              </button>
-            </div>
-          </div>
-          <div className="a-box">
-            <div className="a-top">
-              <img src={AImage} alt="" />
-              <h4>Vitaliy Akterskiy</h4>
-              <p>Recently purchased Primate Solana</p>
-            </div>
-            <div className="a-bid">
-              <div className="amount">
-                <h4>34 ETH</h4>
-                <p>Last Bid</p>
-              </div>
-              <button className='offer' >
-                Make offer
-              </button>
-            </div>
-          </div>
-          <div className="a-box">
-            <div className="a-top">
-              <img src={AImage} alt="" />
-              <h4>Vitaliy Akterskiy</h4>
-              <p>Recently purchased Primate Solana</p>
-            </div>
-            <div className="a-bid">
-              <div className="amount">
-                <h4>34 ETH</h4>
-                <p>Last Bid</p>
-              </div>
-              <button className='offer' >
-                Make Offer
-              </button>
-            </div>
-          </div>
-          <div className="a-box">
-            <div className="a-top">
-              <img src={AImage} alt="" />
-              <h4>Vitaliy Akterskiy</h4>
-              <p>Recently purchased Primate Solana</p>
-            </div>
-            <div className="a-bid">
-              <div className="amount">
-                <h4>34 ETH</h4>
-                <p>Last Bid</p>
-              </div>
-              <button className='offer'>
-                Make Offer
-              </button>
-            </div>
-          </div>
+          <h4>Recent Activity</h4>
+          {BID.map((b) => (
+            <Recentcard image={b.image} name={b.name} recent={b.recent} eth={b.eth} />
+          ))}
         </div>
       </div>
     </div>
