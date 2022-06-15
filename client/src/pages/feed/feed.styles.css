@@ -50,14 +50,12 @@
 }
 .story{
     height: 14rem;
-    z-index: -2;
     background: rgba(80, 95, 108, 0.34);
     border-radius: 15px;
     margin-right: 2rem;
 }
-.story :hover{
-    background: rgba(139, 139, 139, 0.34);
-    box-shadow: 0px 4px 110px 7px rgba(205, 205, 205, 0.25);
+.story:hover{
+    box-shadow: 0px 4px 110px 7px rgba(78, 77, 77, 0.711);
 }
 .story-banner img{
     border-radius: 5px;
