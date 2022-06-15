@@ -1,0 +1,32 @@
+.a-box{
+    margin-top: 1rem;
+    background-color: #222428;
+    padding: .5rem;
+    border-radius: 10px;
+}
+.a-top{
+    display: flex;
+}
+.a-top img{
+    height: 3rem;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.top-text{
+    padding-left: .5rem; 
+}
+.a-bid{
+    display: flex;
+}
+.amount{
+    padding-left: .2rem;
+}
+.offer{
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 10px;
+    height: 2rem;
+    padding: .4rem;
+    margin-left: 4rem;
+    margin-top: .3rem;
+}
