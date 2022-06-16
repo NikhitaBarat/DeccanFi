@@ -1,8 +1,10 @@
-import React from 'react'
 
 const Stat = () => {
+
   return (
-    <div>Stat</div>
+    <div>
+      Stat
+    </div>
   )
 }
 
