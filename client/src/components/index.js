@@ -9,3 +9,6 @@ export { default as Story } from './story/story.components';
 export { default as Storycard } from './storycard/storycard.components';
 export { default as Recentcard } from './recentcard/recentcard.components';
 export { default as FeedProfileCard } from './feedProfileCard/feedProfileCard.components'; 
+export { default as Wallet } from './wallet/wallet.component';
+export { default as Setting } from './settings/setting.components';
+export { default as Market } from './market/market.components';
