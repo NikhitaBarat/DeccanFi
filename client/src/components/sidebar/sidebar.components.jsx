@@ -1,34 +1,58 @@
-import React from "react";
-import { WalletIcon, CartIcon, HistoryIcon, OffersIcon, SettingIcon, OverviewIcon } from '../../assets/icons'
-import './sidebar.styles.css';
+import React from "react"
+import {
+  WalletIcon,
+  CartIcon,
+  HistoryIcon,
+  OffersIcon,
+  SettingIcon,
+  OverviewIcon,
+} from "../../assets/icons";
+import { Logo } from "../../assets";
+import { Link } from "react-router-dom";
+import "./sidebar.styles.css";
 
 const Sidebar = () => {
   return (
     <div className="side-bar">
+      <Link to="/">
+        <img src={Logo} alt="" />
+      </Link>
       <ul className="sidebar-nav-option">
         <li>
-          <img src={OverviewIcon} alt="" />
-          Overview
+          <Link to="/dashboard">
+            <img src={OverviewIcon} alt="" />
+            Overview
+          </Link>
         </li>
         <li>
-          <img src={CartIcon} alt="" />
-          Market
+          <Link to="/dashboard/market">
+            <img src={CartIcon} alt="" />
+            Market
+          </Link>
         </li>
         <li>
-          <img src={WalletIcon} alt="" />
-          Wallet
+          <Link to="/dashboard/wallet">
+            <img src={WalletIcon} alt="" />
+            Wallet
+          </Link>
         </li>
         <li>
-          <img src={HistoryIcon} alt="" />
-          History
+          <Link to="/dashboard/history">
+            <img src={HistoryIcon} alt="" />
+            History
+          </Link>
         </li>
         <li>
-          <img src={OffersIcon} alt="" />
-          Offers
+          <Link to="/dashboard/offers">
+            <img src={OffersIcon} alt="" />
+            Offers
+          </Link>
         </li>
         <li>
-          <img src={SettingIcon} alt="" />
-          Settings
+          <Link to="/dashboard/settings">
+            <img src={SettingIcon} alt="" />
+            Settings
+          </Link>
         </li>
       </ul>
     </div>
