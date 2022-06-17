@@ -100,19 +100,19 @@ const Feed = () => {
             <input type="text" placeholder="Tell us about your thoughts" />
           </div>
           <div className="options">
-            <div className="option">
+            <div className="option blue">
               <PhotoSizeSelectActualIcon />
               <p>Photo</p>
             </div>
-            <div className="option">
+            <div className="option red">
               <VideocamIcon />
               <p>Video</p>
             </div>
-            <div className="option">
+            <div className="option yellow">
               <PollIcon />
               <p>Poll</p>
             </div>
-            <div className="option">
+            <div className="option green">
               <CalendarTodayIcon />
               <p>Schedule</p>
             </div>
