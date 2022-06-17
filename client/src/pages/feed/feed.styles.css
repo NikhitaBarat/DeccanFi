@@ -1,9 +1,9 @@
 .feed-page{
     display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 .left{
-    width: 30rem;
-    margin-left: 2rem;
     align-items: center;
     text-align: center;
     font-size: small;
@@ -15,7 +15,6 @@
 .profile-card{
     width: 15rem;
     height: 20rem;
-    z-index: -2;
     background: rgba(80, 95, 108, 0.34);
     border-radius: 15px;
 }
@@ -42,14 +41,15 @@
     color: rgb(224, 216, 242);
 }
 .centre{
-    margin-left: -4rem;
+    /* margin-left: -4rem; */
+    padding: 0 1rem;
 }
 .stories{
     display: flex;
     justify-content: space-between;
 }
 .post{
-    z-index: -2;
+    /* z-index: -2; */
     background-color: #2D3138;
     margin-top: 2rem;
     border-radius: 15px;
@@ -72,24 +72,48 @@
     border: none;
     border-radius: 10px;
     height: 2.4rem;
-    color: #2D3138;
+    color: white;
     margin-top: .7rem;
     outline: none;
+
 }
 .options{
     display: flex;
     justify-content: space-between;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     text-align: center;
 }
 .option{
     display: flex;
+    align-items: center;
+    cursor: pointer;
     gap: .5rem;
     margin: .5rem;
-    padding: 0.3rem 1rem;
+    padding: .5rem 1rem;
     background: #222428;
     border-radius: 10px;
+    transition: all .5s;
 }
+
+.option:hover {
+    background: #444444;    
+}
+
+.yellow:hover {
+    color: rgb(255, 255, 84);
+}
+
+.red:hover {
+    color: rgb(243, 82, 82);
+}
+
+.green:hover {
+    color: rgb(73, 255, 73);
+}
+.blue:hover {
+    color: rgb(39, 140, 255);
+}
+
 .right{
     margin-left: 1rem;
     margin-right: 1rem;
