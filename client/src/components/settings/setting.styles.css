@@ -1,3 +1,87 @@
-.setting-page{
+.setting {
     margin-left: 15rem;
+}
+
+.name-setting {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.name-setting h3 {
+    margin-top: 2rem;
+}
+
+.zero img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 5rem;
+}
+
+.user-setting {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.user-setting h3 {
+    margin-top: 2rem;
+}
+
+.btn-edit {
+    height: 3rem;
+    width: 6rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgb(198, 194, 194);
+}
+
+.btn-edit h2 {
+    padding: 1rem;
+    height: 3rem;
+}
+
+.btn-edit:hover {
+    transform: scale(1.09);
+    transition: 1.5s;
+}
+
+.acc-setting {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.acc-setting h3 {
+    margin-top: 3rem;
+}
+
+.save-edit {
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: rgb(24, 24, 189);
+    padding: 1rem;
+}
+
+.save-edit:hover {
+    transform: scale(1.09);
+    transition: 1.5s;
+}
+
+.accc-edit {
+    height: 3rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgb(198, 194, 194);
+}
+
+.accc-edit:hover {
+    transform: scale(1.09);
+    transition: 1.5s;
+}
+
+.save {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
