@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Auth0Provider } from '@auth0/auth0-react'
 import history from './utils/history';
 import { getConfig } from './config';
+import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 
 const onRedirectCallback = (appState) => {
   history.push(
@@ -24,12 +25,17 @@ const providerConfig = {
   onRedirectCallback,
 };
 
+const activeChainId = ChainId.Mainnet;
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Auth0Provider {...providerConfig}>
-          <App />
+      <ThirdwebProvider desiredChainId={activeChainId}>
+        <App />
+      </ThirdwebProvider>
       </Auth0Provider>
     </BrowserRouter>
   </React.StrictMode>
